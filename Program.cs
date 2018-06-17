@@ -8,11 +8,13 @@ namespace FunctionalCSharp
     {
         static void Main(string[] args)
         {
-            var shoppingList = new List<string> { "coffee beans", "BANANAS", "Dates" };
-
-            var largeList = Enumerable.Range(1, 100000);
-
-            new ListFormatter().Format(largeList.Select(i=>i.ToString()).ToList()).ForEach(Console.WriteLine);
+             Enumerable.Zip(
+                new[] {1, 2, 3},
+                new[] {"ichi", "ni", "san"},
+                (number, name) => $"In Japanese {number} is: {name}")
+                .ToList().ForEach(Console.WriteLine);
+            
+            
            
         }
     }
@@ -32,7 +34,8 @@ namespace FunctionalCSharp
         string PrependCounter(string s) => $"{++counter}. {s}"; 
     
         public List<string> Format(List<string> list) 
-             => list.Select(StringExt.ToSentenceCase).AsParallel()
+             => list.AsParallel()
+                .Select(StringExt.ToSentenceCase)
                 .Select(PrependCounter).ToList(); 
     
     }
