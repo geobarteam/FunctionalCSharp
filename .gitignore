@@ -36,3 +36,4 @@ Output/
 tools/
 
 *.trx
+/.vs/FunctionalCSharp/v15/Server/sqlite3
