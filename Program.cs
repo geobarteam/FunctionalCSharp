@@ -6,7 +6,8 @@ using System.Linq;
 using System.Text;
 using static System.Linq.ParallelEnumerable;
 using System.Text.RegularExpressions;
-using FunctionalCSharp.None.Option;
+using FunctionalCSharp.Option;
+using FunctionalCSharp.Option;
 
 
 namespace FunctionalCSharp
@@ -15,21 +16,17 @@ namespace FunctionalCSharp
     {
         static void Main(string[] args)
         {
-            var subs = new Subscriber
-            {
-                FirstName = new Some<string>("Geoffrey"),
-                LastName = "test"
-
-            };
+            //Demonstrate use of Match with Option type
+            Console.WriteLine(OptionExamples.GreetingFor(new Subscriber()));
+            var a = Int.Parse("10");
+            Console.ReadLine();
         }
+
+        
+        
     }
 
-    public class Subscriber
-    {
-        public Option<string> FirstName { get; set; }
-
-        public string LastName { get; set; }
-    }
+   
   
 
 
