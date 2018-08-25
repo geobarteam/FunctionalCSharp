@@ -18,9 +18,6 @@ namespace FunctionalCSharp
         public static Func<T, Unit> ToFunc<T>(this Action<T> action)
             => (t) => { action(t); return Unit(); };
         // more overloads to cater for Action's with more arguments...
-
-
-    
     }
     
 }

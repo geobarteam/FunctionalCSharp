@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "FunctionalCSharp/1.0.0": {
+        "dependencies": {
+          "LaYumba.Functional": "1.0.0.0"
+        },
         "runtime": {
           "FunctionalCSharp.dll": {}
+        }
+      },
+      "LaYumba.Functional/1.0.0.0": {
+        "runtime": {
+          "LaYumba.Functional.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "FunctionalCSharp/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LaYumba.Functional/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

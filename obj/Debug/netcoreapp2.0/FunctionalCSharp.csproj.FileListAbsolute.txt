@@ -8,3 +8,7 @@ C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCS
 C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCSharp.AssemblyInfo.cs
 C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCSharp.dll
 C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCSharp.pdb
+C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCSharp.csprojAssemblyReference.cache
+C:\Users\gvd8\source\repos\FunctionalCSharp\bin\Debug\netcoreapp2.0\LaYumba.Functional.dll
+C:\Users\gvd8\source\repos\FunctionalCSharp\bin\Debug\netcoreapp2.0\LaYumba.Functional.pdb
+C:\Users\gvd8\source\repos\FunctionalCSharp\obj\Debug\netcoreapp2.0\FunctionalCSharp.csproj.CopyComplete

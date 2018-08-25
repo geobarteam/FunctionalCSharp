@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="LaYumba.Functional">
+      <HintPath>..\functional-csharp-code\LaYumba.Functional\bin\Debug\netstandard1.6\LaYumba.Functional.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
