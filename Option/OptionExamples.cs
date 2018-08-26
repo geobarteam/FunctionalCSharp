@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Text;
 using FunctionalCSharp.Option;
 
@@ -12,7 +13,6 @@ namespace FunctionalCSharp.Option
                 () => "Dear Subscriber,",
                 (name) => $"Dear {name},");
 
-       
     }
 
     public class Subscriber
