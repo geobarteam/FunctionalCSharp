@@ -19,10 +19,13 @@ namespace FunctionalCSharp
             //Demonstrate use of Match with Option type
             Console.WriteLine(OptionExamples.GreetingFor(new Subscriber()));
             var a = Int.Parse("10");
+            var dayOfWeek = Enum.Parse<DayOfWeek>("Freeday");
+
             var t = new NameValueCollection().Lookup("green");
             Console.WriteLine(t.Match(
                 () => "T is None",
                 (value) => $"T is {value}"));
+            dayOfWeek = Enum.Parse<DayOfWeek>("Friday");
             Console.ReadLine();
         }
 
