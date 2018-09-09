@@ -1,5 +1,5 @@
 ﻿using System;
-using static FunctionalCSharp.F;
+using static FunctionalCSharp.Extensions;
 
 
 namespace FunctionalCSharp

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Text;
 using FunctionalCSharp.Option;
+using FunctionalCSharp;
+using Unit = System.ValueTuple;
 
 namespace FunctionalCSharp.Option
 {
