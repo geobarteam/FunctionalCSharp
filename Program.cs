@@ -37,13 +37,20 @@ namespace FunctionalCSharp
             strings.ToList().ForEach(n => Console.Write(n));
 
             strings.ForEach(n => Console.Write(n));
-            */
+
             var opt = Some("Geoffrey");
             opt.Map(F.ToUpper)
                 .Map(o => $"Hello {o},")
                 .ForEach(n => Console.WriteLine(n));
+            */
+            do
+            {
+                var input = Console.ReadLine();
+                Option<int> optI = Int.Parse(input);
 
-            Console.ReadLine();
+                optI.Bind(i => Age.Of(i))
+                    .ForEach(c => Console.WriteLine($"{c.Value} is a valid age!"));
+            } while (true);
         }
     }
 
@@ -65,11 +72,5 @@ namespace FunctionalCSharp
         {
             return s.ToUpper();
         }
-
     }
-
-   
-  
-
-
 }
