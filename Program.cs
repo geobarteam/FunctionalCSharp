@@ -45,11 +45,7 @@ namespace FunctionalCSharp
             */
             do
             {
-                var input = Console.ReadLine();
-                Option<int> optI = Int.Parse(input);
-
-                optI.Bind(i => Age.Of(i))
-                    .ForEach(c => Console.WriteLine($"{c.Value} is a valid age!"));
+                AskForValidAgeAndPrintFlatteringMessage.Start();
             } while (true);
         }
     }
