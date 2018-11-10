@@ -86,4 +86,6 @@ namespace FunctionalCSharp
             return s.ToUpper();
         }
     }
+
+
 }
