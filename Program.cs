@@ -10,6 +10,8 @@ using System.Text.RegularExpressions;
 using FunctionalCSharp.Option;
 using static FunctionalCSharp.Extensions;
 using Unit = System.ValueTuple;
+using static FunctionalCSharp.F;
+using static System.Math;
 
 
 namespace FunctionalCSharp
@@ -42,11 +44,26 @@ namespace FunctionalCSharp
             opt.Map(F.ToUpper)
                 .Map(o => $"Hello {o},")
                 .ForEach(n => Console.WriteLine(n));
-            */
+           
             do
             {
                 AskForValidAgeAndPrintFlatteringMessage.Start();
-            } while (true);
+            } while (true);*/
+
+            var res = Math.Calc(0, 0);
+            Console.WriteLine(res.ToString());
+
+        }
+    }
+
+    public static class Math
+    {
+        public static Either<string, double> Calc(double x, double y)
+        {
+            if (y == 0) return "y cannot be 0";
+            if (x != 0 && Sign(x) != Sign(y)) return "x / y cannot be negative";
+
+            return Sqrt(x / y);
         }
     }
 
