@@ -50,8 +50,8 @@ namespace FunctionalCSharp
                 AskForValidAgeAndPrintFlatteringMessage.Start();
             } while (true);*/
 
-            var res = Math.Calc(0, 0);
-            Console.WriteLine(res.ToString());
+            MyGreeting.Do();
+            Console.ReadLine();
 
         }
     }
