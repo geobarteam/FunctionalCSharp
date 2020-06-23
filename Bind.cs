@@ -11,6 +11,7 @@ namespace FunctionalCSharp
             => optT.Match(
                 () => None,
                 (t) => f(t));
+                
         public static Option<R> Map<T, R>
             (this Option<T> optT, Func<T, R> f)
             => optT.Match(

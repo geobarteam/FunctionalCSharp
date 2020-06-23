@@ -21,22 +21,27 @@ namespace FunctionalCSharp
         static void Main(string[] args)
         {
             //Demonstrate use of Match with Option type
-            /* Example 1 - Otion Type
-            Console.WriteLine(OptionExamples.GreetingFor(new Subscriber()));
-            */
+            /* Example 1 - Otion Type*/
+            Console.WriteLine(OptionExample.GreetingFor(new Subscriber()));
             
-            /* Example 2 - Map
+            
+            /* Example 2 - Map & ForEach */
             
             var opt = Some("Geoffrey");
             opt.Map(F.ToUpper)
                 .Map(o => $"Hello {o},")
-                .ForEach(n => Console.WriteLine(n));
+                .ForEach(n => Console.WriteLine(n));          
            
-            do
-            {
-                AskForValidAgeAndPrintFlatteringMessage.Start();
-            } while (true);*/
+            /* Example 3 Either */
+            Console.WriteLine("X:");
+            var x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Y:");
+            var y = Convert.ToDouble(Console.ReadLine());
 
+            Math.Calc(x, y)
+                .Match(
+                    error => Console.WriteLine($"Input problem: {error}"),
+                    result => Console.WriteLine($"Result: {result.ToString()}"));
             Console.ReadLine();
         }
     }
