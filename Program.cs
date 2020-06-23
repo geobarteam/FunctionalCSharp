@@ -20,26 +20,13 @@ namespace FunctionalCSharp
     {
         static void Main(string[] args)
         {
-            /*
             //Demonstrate use of Match with Option type
+            /* Example 1 - Otion Type
             Console.WriteLine(OptionExamples.GreetingFor(new Subscriber()));
-            var a = Int.Parse("10");
-            var dayOfWeek = Enum.Parse<DayOfWeek>("Freeday");
-
-            var t = new NameValueCollection().Lookup("green");
-            Console.WriteLine(t.Match(
-                () => "T is None",
-                (value) => $"T is {value}"));
-            dayOfWeek = Enum.Parse<DayOfWeek>("Friday");
+            */
             
-
-            var numbers = new []{1,2,3,4,5};
-            var strings = numbers.Map(n => n.ToString());
-
-            strings.ToList().ForEach(n => Console.Write(n));
-
-            strings.ForEach(n => Console.Write(n));
-
+            /* Example 2 - Map
+            
             var opt = Some("Geoffrey");
             opt.Map(F.ToUpper)
                 .Map(o => $"Hello {o},")
@@ -50,9 +37,7 @@ namespace FunctionalCSharp
                 AskForValidAgeAndPrintFlatteringMessage.Start();
             } while (true);*/
 
-            MyGreeting.Do();
             Console.ReadLine();
-
         }
     }
 
