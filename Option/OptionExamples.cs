@@ -8,7 +8,7 @@ using Unit = System.ValueTuple;
 
 namespace FunctionalCSharp.Option
 {
-    public static class OptionExamples
+    public static class OptionExample
     {
         public static string GreetingFor(Subscriber subscriber)
             => subscriber.Name.Match(
