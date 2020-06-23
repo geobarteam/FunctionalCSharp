@@ -28,13 +28,16 @@ namespace FunctionalCSharp
     {
         public static void Start()
             => WriteLine($"Only {ReadAge()}! That's young!");
+
         static Age ReadAge()
             => ParseAge(Prompt("Please enter your age"))
                 .Match(
                     () => ReadAge(),
                     (age) => age);
+
         static Option<Age> ParseAge(string s)
             => Int.Parse(s).Bind(Age.Of);
+            
         static string Prompt(string prompt)
         {
             WriteLine(prompt);
